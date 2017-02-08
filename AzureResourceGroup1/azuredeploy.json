@@ -124,9 +124,8 @@
     "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',parameters('virtualNetworkName'))]",
     "subnetRef": "[concat(variables('vnetID'),'/subnets/',parameters('subnetName'))]",
     "computerNamePrefix": "sparknode",
-    "scriptUrl": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/spark-on-ubuntu/",
-    "scriptUrl2": "C:/Users/861299/Documents/Visual Studio 2015/Projects/AzureResourceGroup1/AzureResourceGroup1/",
-    "templateUrl": "[variables('scriptUrl2')]",
+    "scriptUrl": "https://github.com/stephansmit/azure-spark/tree/master/AzureResourceGroup1/",
+    "templateUrl": "[variables('scriptUrl')]",
     "sharedTemplateName": "shared-resources",
     "jumpboxTemplateName": "jumpbox-resources-",
     "tshirtSizeS": {
