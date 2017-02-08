@@ -87,7 +87,7 @@
   "outputs": {
     "storageAccountName": {
       "type": "string",
-      "value": "[parameters('storageAccountName')]"
+      "value": "reference(concat('Microsoft.Storage/storageAccounts/', parameters('storageAccountName')), providers('Microsoft.Storage', 'storageAccounts').apiVersions[0]).primaryEndpoints.blob', 'storageAccounts').apiVersions[0]).primaryEndpoints.blob"
     }
   }
 }
